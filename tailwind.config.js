@@ -7,10 +7,6 @@ const {default: flattenColorPalette} = require('tailwindcss/lib/util/flattenColo
 module.exports = {
 	content: ['./{src,app}/**/*.{ts,tsx}'],
 	theme: {
-		fontFamily: {
-			sans: ['var(--font-inter)', ...defaultTheme.fontFamily.sans],
-			title: ['var(--font-title)', ...defaultTheme.fontFamily.serif],
-		},
 		extend: {
 			colors: {
 				blurple: '#5865F2',
