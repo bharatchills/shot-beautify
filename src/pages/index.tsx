@@ -96,25 +96,25 @@ export default function Home() {
                 d="M200,224H56a8,8,0,0,1-8-8V40a8,8,0,0,1,8-8h96l56,56V216A8,8,0,0,1,200,224Z"
                 fill="none"
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="16"
               ></path>
               <polyline
                 points="152 32 152 88 208 88"
                 fill="none"
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="16"
               ></polyline>
               <polyline
                 points="100 156 128 184 156 156"
                 fill="none"
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="16"
               ></polyline>
               <line
                 x1="128"
@@ -123,14 +123,14 @@ export default function Home() {
                 y2="184"
                 fill="none"
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="16"
               ></line>
             </svg>
             <span>Save</span>
             </div>
-            {gradients.map((e)=>( <div onClick={()=>setImgBackground(e)} className={"h-8 w-8 cursor-pointer  rounded-full m-1 "+e}></div>))}
+            {gradients.map((e)=>( <div key={e}  onClick={()=>setImgBackground(e)} className={"h-8 w-8 cursor-pointer  rounded-full m-1 "+e}></div>))}
            
 
           </div>
