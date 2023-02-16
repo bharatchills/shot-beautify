@@ -10,7 +10,7 @@ export default function Home() {
   );
   const [preview, setPreview] = useState("");
   const container = useRef(null);
-
+    
   let gradients = [
     "bg-gradient-to-br from-[#9fbdd3] to-[#ebe6e2]",
     " bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400",
@@ -47,6 +47,7 @@ export default function Home() {
     // free memory when ever this component is unmounted
     return () => URL.revokeObjectURL(objectUrl);
   }, [selectedFile]);
+  
 
   const onSelectFile = (e: any) => {
     if (!e.target.files || e.target.files.length === 0) {
@@ -60,23 +61,21 @@ export default function Home() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center main h-screen w-screen">
+    <div onPaste={(e)=>console.log('TODO: ON PASE FEATURE IN PROCESS')}  className="flex flex-col items-center justify-center main h-screen w-screen">
       {dropped ? (
         <>
           <div
             ref={container}
             className={
-              "relative flex items-center justify-center flex-col rounded-lg w-1/2 h-3/4 " +
+              "w-full flex items-center justify-center flex-col rounded-lg sm:w-1/2 h-3/4 " +
               imgBackground
             }
           >
-            <div className="image">
               <img
-                className="rounded-2xl max-h-64  max-w-md"
+                className="rounded-2xl max-h-64 max-w-[76%]"
                 src={preview}
                 alt=""
               />
-            </div>
           </div>
           <div className="flex m-4">
           <div
