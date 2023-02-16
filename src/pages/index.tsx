@@ -17,6 +17,7 @@ export default function Home() {
     "bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500",
     "bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400",
     "bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100",
+    "bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500"
   ];
   function exportToPng(dom: any) {
     domtoimage
